@@ -9,8 +9,8 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Build
-      - run: npm ci
-      - run: npm run build
+        run: npm ci
+        run: npm run build
 
       - name: Deploy
         if: github.ref == 'refs/heads/main'
