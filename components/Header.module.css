@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  align-content: center;
+  justify-items: stretch;
+
+  background-color: #0a090ce7;
+  color: white;
+}
+
+/* START align header sections */
+.headerSection {
+    display: flex;
+
+    flex: 1;
+    align-self: center;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.headerSection:first-child {
+    align-self: flex-start;
+    justify-content: left;
+}
+
+.headerSection:last-child {
+    align-self: flex-end;
+    justify-content: right;
+}
+/* END align header sections */
+
+.circleImage {
+    display: block;
+    max-width: 32px;
+    max-height: 32px;
+    border-radius:50%
+}
+
+.text {
+    text-align: center;
+}
+
+@media screen and (max-width: 640px) {
+    /* on mobile we will make the header column instead */
+    /* and also put links at the bottom for easier navigation */
+    .header {
+        flex-direction: column;
+    }
+
+    .headerLinks {
+        order: 1;
+    }
+}
