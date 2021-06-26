@@ -16,6 +16,8 @@
 
     align-items: center;
     justify-content: center;
+
+    padding: 8px;
 }
 
 .headerSection:first-child {
@@ -29,6 +31,10 @@
 }
 /* END align header sections */
 
+.headerName {
+    gap: 10px;
+}
+
 .circleImage {
     display: block;
     max-width: 32px;
@@ -38,6 +44,9 @@
 
 .text {
     text-align: center;
+    vertical-align: middle;
+
+    font-size: 1.25rem;
 }
 
 @media screen and (max-width: 640px) {
