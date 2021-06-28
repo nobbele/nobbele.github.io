@@ -13,11 +13,13 @@
 
     flex: 1;
     align-self: center;
+    height: 100%;
 
     align-items: center;
     justify-content: center;
 
-    padding: 8px;
+
+    gap: 10px;
 }
 
 .headerSection:first-child {
@@ -31,15 +33,30 @@
 }
 /* END align header sections */
 
-.headerName {
-    gap: 10px;
+.linkContainer {
+    display: flex;
+    height: 100%;
+
+    padding: 0 16px 0 16px;
+
+    justify-content: center;
+    align-items: center;
+
+    transition: 250ms;
+}
+
+.linkContainer:hover {
+    background-color: blue;
+    cursor: pointer;
 }
 
 .circleImage {
     display: block;
     max-width: 32px;
     max-height: 32px;
-    border-radius:50%
+    border-radius:50%;
+
+    margin: 8px;
 }
 
 .text {

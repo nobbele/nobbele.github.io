@@ -1,5 +1,6 @@
 import classNames from 'classnames';
 import styles from './Header.module.css';
+import Link from 'next/link';
 
 export default function Header() {
     return (
@@ -8,12 +9,23 @@ export default function Header() {
                 <img src="/pfp.webp" className={styles.circleImage} />
                 <span className={classNames(styles.text, styles.name)}>nobbele</span>
             </div>
-            <div className={classNames(styles.headerSection, styles.headerLinks)}>
-                <a className={styles.text} href="/">Home</a>
-            </div>
+            <nav className={classNames(styles.headerSection, styles.headerLinks)}>
+                <HeaderLink className={styles.text} href="/">Home</HeaderLink>
+                <HeaderLink className={styles.text} href="/projects">Projects</HeaderLink>
+            </nav>
             <div className={styles.headerSection}>
                 <span className={styles.text}>social</span>
             </div>
         </div>
+    )
+}
+
+function HeaderLink({ href, className, children }) {
+    return (
+        <Link href={href}>
+            <div className={styles.linkContainer}>
+                <span className={className}>{children}</span>
+            </div>
+        </Link>
     )
 }
