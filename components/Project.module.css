@@ -28,7 +28,7 @@
 .thumbnail {
     display: inline-block;
 
-    max-height: 64px;
+    max-height: calc(42px - 8px * 2);
 
     object-fit: contain;
 }

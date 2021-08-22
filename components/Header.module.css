@@ -81,7 +81,12 @@
         flex-direction: column;
     }
 
-    .headerLinks {
-        order: 1;
+    .headerSection:first-child, .headerSection:last-child {
+        justify-content: center;
+        align-self: center;
+    }
+
+    .socials {
+        display: none;
     }
 }
