@@ -59,6 +59,14 @@
     margin: 8px;
 }
 
+.socialImage {
+    max-width: 24px;
+    max-height: 24px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .text {
     text-align: center;
     vertical-align: middle;

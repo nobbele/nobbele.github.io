@@ -13,8 +13,13 @@ export default function Header() {
                 <HeaderLink className={styles.text} href="/">Home</HeaderLink>
                 <HeaderLink className={styles.text} href="/projects">Projects</HeaderLink>
             </nav>
-            <div className={styles.headerSection}>
-                <span className={styles.text}>social</span>
+            <div className={classNames(styles.headerSection, styles.socials)}>
+                <a href="https://github.com/nobbele" target="_blank">
+                    <figure>
+                        <img src="/gh64.png" className={classNames(styles.circleImage, styles.socialImage)} />
+                        <figcaption>GitHub</figcaption>
+                    </figure>
+                </a>
             </div>
         </div>
     )
