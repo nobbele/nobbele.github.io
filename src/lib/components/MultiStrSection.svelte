@@ -26,7 +26,7 @@
 <style>
   .wrapper {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
 
     max-width: 100%;
@@ -37,7 +37,9 @@
   }
 
   .decl {
-    display: contents;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .code-text {

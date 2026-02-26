@@ -14,9 +14,8 @@
 
 <div class="wrapper">
   <span class="decl"
-    >{key}<span class="code-text"
-      >{"\xa0".repeat(align)}= {withVar ? `with ${withVar}; ` : ""}{"{"}</span
-    ></span
+    >{key}<span class="code-text"></span>
+    {" ".repeat(align)}= {withVar ? `with ${withVar}; ` : ""}{"{"}</span
   >
   <IndentSection>
     {@render children?.()}

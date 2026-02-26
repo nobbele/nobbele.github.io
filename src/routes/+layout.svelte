@@ -18,6 +18,7 @@
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
+    min-width: 300px;
 
     justify-content: center;
     background-color: black;

@@ -13,10 +13,15 @@
 
 <div class="wrapper">
   <span class="decl"
-    >{key} <span class="code-text">{" ".repeat(align)}= "</span></span
+    >{key} <span class="code-text spaces">{" ".repeat(align)}</span><span
+      class="code-text">=&nbsp;</span
+    ></span
   >
-  {@render children?.()}
-  <span class="code-text">";</span>
+  <span
+    ><span class="code-text">"</span>{@render children?.()}<span
+      class="code-text">";</span
+    ></span
+  >
 </div>
 
 <style>
@@ -39,5 +44,10 @@
   .code-text {
     color: var(--text-code);
     text-wrap-mode: nowrap;
+  }
+
+  .code-text.spaces {
+    color: var(--text-code);
+    text-wrap-mode: wrap;
   }
 </style>
