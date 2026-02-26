@@ -66,7 +66,9 @@
 <div class="badges">
   <img alt="Emily (cutie)" src={emily} />
   <img alt="vernonlim" src={vernonlim} />
-  <img alt="Arda Fevzi Armutcu" src={arda} />
+  <a href="https://www.ardarmutcu.com/" target="_blank"
+    ><img alt="Arda Fevzi Armutcu" src={arda} /></a
+  >
 </div>
 
 <style>
