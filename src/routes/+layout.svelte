@@ -26,6 +26,12 @@
     font-family: "Source Code Pro", Consolas, Monaco, monospace;
     text-underline-offset: 0.1em;
     line-height: 1.25;
+
+    text-wrap-mode: nowrap;
+  }
+
+  :global(p) {
+    text-wrap-mode: wrap;
   }
 
   :global(:root) {

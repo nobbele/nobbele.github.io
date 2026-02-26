@@ -21,6 +21,7 @@
   .wrapper {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .code-text {

@@ -16,6 +16,7 @@
   .wrapper {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 
     padding-left: var(--indent);
   }

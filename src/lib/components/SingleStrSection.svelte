@@ -12,8 +12,8 @@
 </script>
 
 <div class="wrapper">
-  <span
-    >{key} <span class="code-text">{"\xa0".repeat(align)}=&nbsp;"</span></span
+  <span class="decl"
+    >{key} <span class="code-text">{" ".repeat(align)}= "</span></span
   >
   {@render children?.()}
   <span class="code-text">";</span>
@@ -23,9 +23,21 @@
   .wrapper {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+
+    max-width: 100%;
+  }
+
+  .wrapper * {
+    white-space: pre;
+  }
+
+  .decl {
+    display: contents;
   }
 
   .code-text {
     color: var(--text-code);
+    text-wrap-mode: nowrap;
   }
 </style>

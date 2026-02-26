@@ -13,9 +13,8 @@
 </script>
 
 <div class="wrapper">
-  <span
-    >{key}
-    <span class="code-text"
+  <span class="decl"
+    >{key}<span class="code-text"
       >{"\xa0".repeat(align)}= {withVar ? `with ${withVar}; ` : ""}{"{"}</span
     ></span
   >
@@ -29,6 +28,19 @@
   .wrapper {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+
+    max-width: 100%;
+  }
+
+  .wrapper * {
+    white-space: pre;
+  }
+
+  .decl {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .code-text {

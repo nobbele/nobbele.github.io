@@ -13,6 +13,8 @@
     margin: 1rem;
     padding: 1rem 2rem;
 
+    max-width: min(80%, 800px);
+
     background-color: #1f1f1f;
     border: 1px solid white;
     box-shadow: 0 0 8px gray;

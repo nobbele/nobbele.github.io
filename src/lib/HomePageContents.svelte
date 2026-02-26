@@ -37,13 +37,6 @@
     <SingleStrSection key="username">nobbele</SingleStrSection>
     <SingleStrSection key="name" align={4}>Alice</SingleStrSection>
     <SingleStrSection key="pronouns" align={0}>she/they</SingleStrSection>
-    <!-- <ArraySection key="pronouns" withVar="pronouns"
-      ><span>she/they</span>
-      <span class="comment"># I prefer this</span>
-      <span>she/her</span>
-      <span class="comment"># But this is cool to use occasionally</span>
-      <span>they/them</span>
-    </ArraySection> -->
 
     <span class="code-text">&nbsp;</span>
 
@@ -89,9 +82,11 @@
 
   .code-text {
     color: var(--text-code);
+    text-wrap-mode: wrap;
   }
 
   .comment {
     color: var(--text-comment);
+    text-wrap-mode: wrap;
   }
 </style>
