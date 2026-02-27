@@ -30,7 +30,7 @@
 
 <div class="code">
   <span class="code-text">
-    {"{ pkgs = import <nixpkgs>, people, pronouns, ... }:"}
+    {"{ pkgs = import <nixpkgs>, people, ... }:"}
   </span>
   <span class="code-text"> {"pkgs.mkPeopleDerivation {"} </span>
   <IndentSection>
